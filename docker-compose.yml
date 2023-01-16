@@ -7,7 +7,7 @@ services:
     ports:
           - "8787:8787"
     environment:
-          - PASSWORD=lidka
+          - PASSWORD=.....
           - DISABLE_AUTH=true
           - ROOT=TRUE
     volumes:
