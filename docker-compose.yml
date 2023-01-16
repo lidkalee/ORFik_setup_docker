@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  orfik:
+    build: 
+        context: ./
+        dockerfile: DockerfileORFik
+    ports:
+          - "8787:8787"
+    environment:
+          - PASSWORD=lidka
+          - DISABLE_AUTH=true
+          - ROOT=TRUE
+    volumes:
+          - /home/lidia/Documents:/home/rstudio
+          - /home/lidia/Documents:/home/Documents
